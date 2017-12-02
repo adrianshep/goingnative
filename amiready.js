@@ -3,6 +3,22 @@
 
 /*
 
+$ goingnative verify
+✓ Found usable `node` version: v6.12.0
+✓ Found usable `gcc` in $PATH: v6.0.0
+✓ Found usable `python` in $PATH: v2.7.5
+✓ Found usable `node-gyp` in $PATH: v3.6.2
+Running `node-gyp`, this may take a few minutes if it hasn't been run before...
+  CXX(target) Release/obj.target/test/test.o
+  SOLINK_MODULE(target) Release/test.node
+✓ Compiled test package
+✓ Found compiled test binding file
+✓ Test binding file works as expected
+
+# PASS
+
+Your solution to AM I READY? passed!
+
 AM I READY?
  Exercise 1 of 8
 
