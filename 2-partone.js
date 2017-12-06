@@ -3,6 +3,38 @@
 
 /*
 
+Here's the official solution in case you want to compare notes:
+
+────────────────────────────────────────────────────────────────────────────────
+binding.gyp:
+
+    {
+      "targets": [
+        {
+          "target_name": "myaddon",
+          "sources": [ "myaddon.cc" ],
+          "include_dirs": [ "<!(node -e \"require('nan')\")" ]
+        }
+      ]
+    }
+
+────────────────────────────────────────────────────────────────────────────────
+package.json:
+
+    {
+      "name": "myaddon",
+      "version": "0.0.0",
+      "description": "My Awesome Addon",
+      "main": "index.js",
+      "scripts": {
+        "install": "node-gyp rebuild"
+      },
+      "license": "MIT"
+      ,"gypfile":true
+    }
+
+────────────────────────────────────────────────────────────────────────────────
+
 MISSION POSSIBLE: PART ONE
  Exercise 2 of 8
 
