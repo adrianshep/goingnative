@@ -23,7 +23,9 @@ package directory you submitted in the previous exercise.
 ### Mission: write an index.js
 
 You will always need a small amount of JavaScript glue for a native add-on to
-tell Node.js where the add-on binary is located for loading (via require()) and to then either expose the add-on via exports or perform some internal work with the add-on.
+tell Node.js where the add-on binary is located for loading (via require()) and
+to then either expose the add-on via exports or perform some internal work with
+the add-on.
 
 For this exercise, the add-on C++ code we will be building will expose a method
 named print(). We are using the bindings library to simplify the locating and
