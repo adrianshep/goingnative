@@ -3,6 +3,17 @@
 
 /*
 
+Here's the official solution in case you want to compare notes:
+
+────────────────────────────────────────────────────────────────────────────────
+    var bindings = require('bindings')
+    var myaddon = bindings('myaddon')
+
+    myaddon.print()
+
+────────────────────────────────────────────────────────────────────────────────
+
+
 MISSION POSSIBLE: PART TWO
  Exercise 3 of 8
 
