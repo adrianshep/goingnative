@@ -1,4 +1,4 @@
 var bindings = require('bindings')
-var addon = bindings('modulename')
+var myaddon = bindings('myaddon')
 
-addon.print()
+myaddon.print()
