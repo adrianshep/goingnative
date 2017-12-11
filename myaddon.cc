@@ -3,7 +3,7 @@
 using namespace v8;
 
 NAN_METHOD(Print) {
-
+  printf("I am a native addon and I AM ALIVE!\n", );
 }
 
 NAN_MODULE_INIT(Init) {
