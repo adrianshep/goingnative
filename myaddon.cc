@@ -10,3 +10,5 @@ NAN_MODULE_INIT(Init) {
   Nan::Set(target, Nan::New("print").ToLocalChecked(),
       Nan::GetFunction(Nan::New<FunctionTemplate>(Print)).ToLocalChecked());
 }
+
+NODE_MODULE(myaddon, Init)
