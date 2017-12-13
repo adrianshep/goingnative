@@ -3,6 +3,20 @@
 
 /*
 
+FAIL
+
+✓ package.json contains `"gypfile": true`
+✓ binding.gyp includes a "myaddon" target
+✓ binding.gyp includes "myaddon.cc" as a source file
+✓ binding.gyp includes a correct NAN include statement
+xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+
+xcode-select: error: tool 'xcodebuild' requires Xcode, but active developer directory '/Library/Developer/CommandLineTools' is a command line tools instance
+
+make: *** No rule to make target `Release/obj.target/myaddon/myaddon.o', needed by `Release/myaddon.node'.  Stop.
+✗ node-gyp build: `make` failed with exit code: 2
+
+
 MISSION POSSIBLE: PART THREE
  Exercise 4 of 8
 
