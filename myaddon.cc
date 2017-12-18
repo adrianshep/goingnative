@@ -8,11 +8,13 @@ NAN_METHOD(Print) {
   if (maybeStr.ToLocal(&str) == false) {
     Nan::ThrowError("Error converting first argument to string");
   }
-  printf("%s\n", *String::Utf8Value(str));
+  int len = strlen(*String::Utf8Value(str));
+
+  info.GetReturnValue().Set(len);
 }
 
 NAN_MODULE_INIT(Init) {
-  Nan::Set(target, Nan::New("print").ToLocalChecked(),
+  Nan::Set(target, Nan::New("length").ToLocalChecked(),
       Nan::GetFunction(Nan::New<FunctionTemplate>(Print)).ToLocalChecked());
 }
 
