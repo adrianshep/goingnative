@@ -1,4 +1,7 @@
 #include <nan.h>
+#ifndef _WIN32
+#include <unistd.h>
+#endif
 
 using namespace v8;
 
